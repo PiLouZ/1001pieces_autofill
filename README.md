@@ -1,83 +1,73 @@
-# 1001pieces_autofill
+# Welcome to your Lovable project
 
-Application locale de complétion automatique pour appareils électroménagers à partir d’un tableau interactif, avec base de données intégrée.
+## Project info
 
-## 🚀 Objectif de l’outil
+**URL**: https://lovable.dev/projects/81657d5a-4a6a-4788-9e89-e5a708ef2fb6
 
-L'application permet de **coller rapidement des données issues d’un tableur** (Excel, OpenOffice, etc.), de les **compléter automatiquement**, puis de les **mémoriser dans une base locale**.
+## How can I edit this code?
 
-Les correspondances sont trouvées à partir des colonnes **C (reference_modele)** et **D (commercial_reference)**, et permettent de compléter automatiquement les colonnes **A (type)** et **B (manufacturer)**.
+There are several ways of editing your application.
 
----
+**Use Lovable**
 
-## 🖥️ Fonctionnalités principales
+Simply visit the [Lovable Project](https://lovable.dev/projects/81657d5a-4a6a-4788-9e89-e5a708ef2fb6) and start prompting.
 
-- ✅ Coller des données depuis le presse-papiers (Ctrl+V / Cmd+V)
-- ✅ 6 colonnes intégrées :  
-  - A : `type`  
-  - B : `manufacturer`  
-  - C : `reference_modele`  
-  - D : `commercial_reference`  
-  - E : `other_reference`  
-  - F : `treatment_column`
-- ✅ Complétion automatique des colonnes A et B si elles sont vides
-- ✅ Recherche de correspondances en base SQLite existante
-- ✅ Enregistrement de nouveaux appareils en base
-- ✅ Tri par colonne (clic sur l'en-tête)
-- ✅ Duplication haut/bas comme dans un tableur :
-  - `Ctrl + ↑` : dupliquer cellule vers le haut
-  - `Ctrl + ↓` : dupliquer cellule vers le bas
-- ✅ Encoche de duplication façon Excel (glisser-remplir)
-- ✅ Export CSV rapide
+Changes made via Lovable will be committed automatically to this repo.
 
----
+**Use your preferred IDE**
 
-## ⚙️ Installation rapide
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-### 💡 Prérequis
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-- Python 3.9 ou plus
-- macOS ou Windows
-- Aucun accès internet requis pendant l'utilisation
+Follow these steps:
 
-### 🚀 Installation en 3 lignes
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Ouvre un terminal dans le dossier cloné, puis :
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-```bash
-chmod +x install.sh
-./install.sh
+# Step 3: Install the necessary dependencies.
+npm i
 
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-📁 Structure du projet
-bash
-Copier
-Modifier
-1001pieces_autofill/
-├── main.py                  # Application PyQt5
-├── install.sh               # Script d'installation rapide
-├── requirements.txt         # Dépendances
-├── README.md                # Ce fichier
-├── appareils.db             # Base de données SQLite (auto-générée)
-└── .gitignore               # Exclut le cache et venv
-🧠 Données persistantes
-Tous les appareils complétés ou injectés sont stockés localement dans appareils.db. Cela permet une complétion plus intelligente à chaque nouvelle utilisation.
+**Edit a file directly in GitHub**
 
-🗓️ Roadmap V2 (à venir)
-Association des références de pièces détachées
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-Export vers des formats spécifiques (clients, marketplaces)
+**Use GitHub Codespaces**
 
-Interface multi-onglets ou onglet “Pièces”
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Mode recherche avancée et filtres dynamiques
+## What technologies are used for this project?
 
-Export Excel avec mise en forme
+This project is built with:
 
-Version avec installeur .app ou .exe
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-🤝 Contributeur principal
-Pierre-Louis SILLIERE
+## How can I deploy this project?
 
-🛡️ Licence
-Projet privé pour usage interne. Non destiné à la distribution publique.
+Simply open [Lovable](https://lovable.dev/projects/81657d5a-4a6a-4788-9e89-e5a708ef2fb6) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
